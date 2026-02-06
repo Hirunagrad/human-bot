@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+package-lock.json   # Optional: Keep this if you want to lock versions, ignore if you don't
+yarn.lock           # Optional: Keep this if you use Yarn
+
+# Environment Variables (CRITICAL for security)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+!.env.example       # Do not ignore example files (useful for sharing template)
+
+# Build Outputs
+dist/
+build/
+out/
+bin/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime Data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store           # macOS
+Thumbs.db           # Windows
