@@ -61,7 +61,7 @@ async function detectMoodWithAI(text: string): Promise<string> {
 // ------------------------------------------------
 // Main chat function
 // ------------------------------------------------
-async function askAI(text: string) {
+export async function askAI(text: string) {
   // Step 1: detect emotion with separate model
   const mood = await detectMoodWithAI(text);
   console.log("🧠 Detected mood:", mood);
